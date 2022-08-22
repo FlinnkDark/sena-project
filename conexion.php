@@ -1,28 +1,17 @@
 <?php
-$conexion = mysqli_connect('localhost','root','','sistema control de actividades')
-or die(mysqli_error($mysqli));
+function conectar(){
+  $host="localhost";
+  $user="root";
+  $pass="";
 
-insertar($conexion);
+  $bd="sistema control de actividades";
 
-function insertar($conexion){
-    $NºDocumento = $_POST['NºDocumento'];
-    $Contraseña = $_POST['Contraseña'];
+  $com=mysqli_connect($host,$user,$pass);
 
+  mysqli_select_db($com,$bd);
+  
+  return $com;
 
-    $consulta = "INSERT INTO validación de usuario(NºDocumento,Contraseña) 
-    VALUES ('$NºDocumento','$Contraseña)";
-    mysqli_query($conexion, $consulta);
-    mysqli_close($conexion);
 }
-      {
-        $Documento = $_POST['Documento'];
-        $NombreCompleto = $_POST['NombreCompleto'];
-        $Empresa = $_POST['Empresa'];
-    
-    
-        $consulta ="INSERT INTO registro de mercaderitas(Documento,Nombre Completo,Empresa) 
-        VALUES ('$Documento','$NombreCompleto,'$Empresa')";
-        mysqli_query($conexion, $consulta);
-        mysqli_close($conexion);
-}
+
 ?>
