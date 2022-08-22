@@ -14,8 +14,7 @@ function insertar($conexion){
     mysqli_query($conexion, $consulta);
     mysqli_close($conexion);
 }
-
-    function insertar($conexion){
+      {
         $Documento = $_POST['Documento'];
         $NombreCompleto = $_POST['NombreCompleto'];
         $Empresa = $_POST['Empresa'];
