@@ -4,7 +4,11 @@ $con=conectar();
 
 $sql = "SELECT * FROM `registro de mercaderistas`";
 
-$query=mysqli_query($com,$sql);
+$result=mysqli_query($con,$sql);
+while ($r= mysqli_fetch_array($result))
+
+mysqli_select_db($con,$bd);
+
 
 $row=mysqli_fetch_array($query);
 ?>
