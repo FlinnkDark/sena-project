@@ -1,16 +1,22 @@
 <?php
 include("conexion.php");
-$con=conectar();
+$connection=conectar();
 
 $sql = "SELECT * FROM `registro de mercaderistas`";
 
-$result=mysqli_query($con,$sql);
-while ($r= mysqli_fetch_array($result))
+$result=mysqli_query($connection,$sql);
+if(!$result)
+{
+  printf ("Error: %s/n", mysqli_error($connection));
+  exit();
+}else{
+while ($row=mysqli_fetch_array($result)){//your code here
+}
+}
 
-mysqli_select_db($con,$bd);
+mysqli_select_db($connection,$bd);
 
 
-$row=mysqli_fetch_array($query);
 ?>
 
 <!DOCTYPE <!DOCTYPE html>

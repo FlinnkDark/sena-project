@@ -6,11 +6,11 @@ function conectar(){
 
   $bd="sistema control de actividades";
 
-  $con=mysqli_connect($host,$user,$pass);
+  $connection=mysqli_connect($host,$user,$pass);
 
-  mysqli_select_db($con,$bd);
+  mysqli_select_db($connection,$bd);
 
-  return $con;
+  return $connection;
 
 }
 
