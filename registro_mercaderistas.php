@@ -2,7 +2,8 @@
 include("conexion.php");
 $con=conectar();
 
-$sql="SELECT * FROM registro de mercaderistas";
+$sql = "SELECT * FROM `registro de mercaderistas`";
+
 $query=mysqli_query($com,$sql);
 
 $row=mysqli_fetch_array($query);
