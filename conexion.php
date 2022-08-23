@@ -13,6 +13,7 @@ mysqli_set_charset($connection, 'utf8');
 if(!$connection){
   $data=array ("error"=> 'No se pudo realizar la conexión');
   die(json_encode($data));
+ 
 }
 
   if (mysqli_connect_errno()){
@@ -27,8 +28,8 @@ if(!$connection){
   showerror( );
 
   return $connection;
+  mysqli_close($connection);
+  
 }
-
-  mysqli_close($connection)
 
 ?>
