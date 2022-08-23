@@ -7,7 +7,7 @@ $sql = "SELECT * FROM `registro de mercaderistas`";
 $result=mysqli_query($connection,$sql);
 if(!$result)
 {
-  printf ("Error: %s/n", mysqli_error($connection));
+  printf ( "Error: $s\n", mysqli_error($connection));
   exit();
 }else{
 while ($row=mysqli_fetch_array($result)){//your code here
