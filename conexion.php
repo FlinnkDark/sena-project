@@ -1,5 +1,6 @@
 <?php
-function conectar(){
+function conectar() {
+
   $host="localhost";
   $usuario="root";
   $password="";
@@ -26,9 +27,8 @@ if(!$connection){
   showerror( );
 
   return $connection;
+}
 
   mysqli_close($connection)
-
-}
 
 ?>
