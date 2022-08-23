@@ -16,7 +16,6 @@ while ($row=mysqli_fetch_array($result)){//your code here
 
 mysqli_select_db($connection,$bd);
 
-
 ?>
 
 <!DOCTYPE <!DOCTYPE html>
