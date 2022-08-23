@@ -5,8 +5,10 @@ function conectar() {
   $usuario="root";
   $password="";
   $basedatos="sistema control de actividades";
-
+  
   $connection=mysqli_connect($host,$usuario,$password,$basedatos) or die("no se ha podido conecectar a la base de datos");
+
+ 
 
 
 mysqli_set_charset($connection, 'utf8');
@@ -22,6 +24,7 @@ if(!$connection){
   }
   function showerror( ){
     die("se ha producido el siguiente error: " . mysqli_error($connection=mysqli_connect()));
+    
   }
 
   if (!(@mysqli_select_db($connection,$basedatos)));
