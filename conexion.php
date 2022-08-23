@@ -5,7 +5,9 @@ function conectar(){
   $password="";
   $basedatos="sistema control de actividades";
 
-  $connection=mysqli_connect($host,$usuario,$password,$basedatos);
+  $connection=mysqli_connect($host,$usuario,$password,$basedatos) or die("no se ha podido conecectar a la base de datos");
+
+
 mysqli_set_charset($connection, 'utf8');
 if(!$connection){
   $data=array ("error"=> 'No se pudo realizar la conexión');
@@ -24,6 +26,8 @@ if(!$connection){
   showerror( );
 
   return $connection;
+
+  mysqli_close($connection)
 
 }
 
