@@ -1,22 +1,7 @@
-<?php
-include("conexion.php");
-$connection=conectar();
-
-$sql = "SELECT * FROM `registro de mercaderistas`";
-
-$result=mysqli_query($connection,$sql);
-if(!$result)
-{
-  printf ( "Error: $s\n", mysqli_error($connection));
-  exit();
-}else{
-while ($row=mysqli_fetch_array($result)){//your code here
-}
-}
-
-mysqli_select_db($connection,$bd);
-
+<?php 
+include 'conexion.php'; 
 ?>
+
 
 <!DOCTYPE <!DOCTYPE html>
 <html lang="es">
