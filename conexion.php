@@ -1,6 +1,6 @@
 <?php 
-$servidor="localhost";
-$usuario="root@localhost";
+$servidor="localhost:3010";
+$usuario="root";
 $password="";
 $bd="sistema control de activides";
 $conecta = mysqli_connect($servidor,$usuario,$password,$bd);
