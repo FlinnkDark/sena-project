@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
-     <link href="recursos/css/estilos.css" rel="stylesheet">
+     <link href="estilos.css" type="resources/css" rel="stylesheet">
      
 </head>
 <body>
