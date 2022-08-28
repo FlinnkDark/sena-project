@@ -5,9 +5,8 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
-     <link href="resources/"  rel="stylesheet">
-     echo '<link href="resources/css/estilos.css" type="text/css" rel="stylesheet">'
-     
+     <link href="resources/css/estilos.css"  rel="stylesheet" type="text/css">
+
 </head>
 <body>
     <header>
