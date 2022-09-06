@@ -31,7 +31,6 @@
             </nav>
         </section>
     </main>
-    
-    <?php require_once("layouts/footer.php")?>
+
 </body>
 </html>
