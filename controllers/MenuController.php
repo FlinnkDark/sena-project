@@ -1,8 +1,7 @@
 <?php
 
 require_once "config/GeneralController.php";
-
-class MenuController  extends GeneralController {
+class MenuController extends GeneralController {
     
     public function index() {
         $this->loadView("menu/index.php", "");

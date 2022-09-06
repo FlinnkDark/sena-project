@@ -1,9 +1,10 @@
 <?php
 
-class InicioController {
+require_once "config/GeneralController.php";
+class InicioController extends GeneralController {
 
     public function index() {
-        echo "InicioControlador metodo index prueba"; 
+        $this->loadView("index.php", "");
     }
 
 }
