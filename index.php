@@ -1,17 +1,22 @@
 <?php
+session_start();
+define("URL","http://".$_SERVER['SERVER_NAME']."/sena-proyecto");
 
-$__url = explode("/", $_SERVER['REQUEST_URI']);
+require_once "view/plantilla.php"
 
-if (isset($__url[3]) && isset($__url[4])) {
-    $__controlador = ucwords($__url[3]) . "Controller";
-    $__metodo = explode("?", $__url[4])[0];
-} else {
-    $__controlador = "InicioController";
-    $__metodo = "index";
-}
 
-require_once "controllers/{$__controlador}.php";
-$__objController = new $__controlador();
-$__objController->$__metodo();
 
+/*
+PRUEBA DE CONEXION
+$db = new conexion();
+$c = $db->conectar();
+$consulta = "SELECT * FROM t_usuarios";
+//PREPARACION DE LA CONSULTA
+$res = $c->prepare($consulta);
+//RETORNO DE UN ARRAY ASOCIATIVO
+$res->setFetchMode(PDO::FETCH_ASSOC);
+//EJECUTAMOS LA CONSULTA 
+$res->execute();
+$datos = $res->fetchAll();
+echo $res ->rowCount();*/
 ?>
