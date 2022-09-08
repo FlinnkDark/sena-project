@@ -18,10 +18,10 @@ if(isset($_REQUEST['controlador'])&&isset($_REQUEST['accion'])){
 }
 
 $controladores = array(
-	"inicio" => array("index","validar","cerrar"),
-	"usuario" => array("index","frmCrear","crear"),
+	"inicio" => array("index","validar","principal","cerrar"),
+	"usuario" => array("frmCrear","crear"),
 	"programa" => array("index","frmCrear","validar","crear","buscarprograma","frmeditar","eliminar","editar"),
-	"formacion" => array("index","validar","frmCrear","crear","buscarformacion","frmeditar","eliminar","editar")
+	"actividades" => array("frmRegistro")
 );
 
 if(array_key_exists($controlador, $controladores)){

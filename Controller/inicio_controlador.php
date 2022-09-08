@@ -8,15 +8,20 @@ class inicio_controlador{
 	public function validar(){
 		$r=inicio_modelo::mdlValidar($_POST['usr'],$_POST['pwd']);
 		if ($r == 1){
-			var_dump($_SESSION);
-			header('Location: /sena-proyecto');
+			header('Location: /sena-proyecto?controlador=inicio&accion=principal');
 		}else{
 			echo '<script> alert("Usuario contraseña incorrectos")</script>';
 			require_once "view/inicio/login.php";
 		}
 	}
+
+	public function principal(){
+		require_once "View/inicio/principal.php";
+	}
+
 	public function cerrar(){
 		session_destroy();
+		header('Location: /sena-proyecto');
 	}
 }
 

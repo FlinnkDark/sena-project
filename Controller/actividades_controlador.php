@@ -1,9 +1,10 @@
 <?php 
 
-class formacion_controlador{
-	public function index(){
-		require_once "View/formacion/index.php";
+class actividades_controlador{
+	public function frmRegistro(){
+		require_once "View/actividades/frmRegistro.php";
 	}
+	
 	public function frmCrear(){
 		$datos = formacion_modelo::mdlListarPrograma();
 		require_once "View/formacion/frmCrear.php";

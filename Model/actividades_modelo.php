@@ -1,5 +1,5 @@
 <?php
-class formacion_modelo{
+class actividades_modelo{
 	public static function mdlListarPrograma(){
 		$db = new conexion();
 		$c = $db->conectar();
