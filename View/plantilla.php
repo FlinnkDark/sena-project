@@ -22,7 +22,7 @@
             <a>Bienvenido: <?php echo $_SESSION['nombre']; ?></label>  
             <a class="enlace" href="?controlador=usuario&accion=frmCrear">Registrar Mercaderistas</a>  
             <a class="enlace" href="?controlador=actividades&accion=frmRegistro">Registrar Actividades </a>
-            <a class="enlace" href="frm_Observaciones.html">Agregar Observaciones</a>
+            <!-- <a class="enlace" href="frm_Observaciones.html">Agregar Observaciones</a> -->
             <a class="enlace" href="?controlador=inicio&accion=cerrar">Cerrar sesión</a>
         </nav>
     </div>

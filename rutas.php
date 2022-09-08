@@ -21,7 +21,7 @@ $controladores = array(
 	"inicio" => array("index","validar","principal","cerrar"),
 	"usuario" => array("frmCrear","crear"),
 	"programa" => array("index","frmCrear","validar","crear","buscarprograma","frmeditar","eliminar","editar"),
-	"actividades" => array("frmRegistro")
+	"actividades" => array("frmRegistro", "crear")
 );
 
 if(array_key_exists($controlador, $controladores)){

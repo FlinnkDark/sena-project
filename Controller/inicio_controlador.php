@@ -11,7 +11,7 @@ class inicio_controlador{
 			header('Location: /sena-proyecto?controlador=inicio&accion=principal');
 		}else{
 			echo '<script> alert("Usuario contraseña incorrectos")</script>';
-			require_once "view/inicio/login.php";
+			$this->index();
 		}
 	}
 
@@ -21,7 +21,7 @@ class inicio_controlador{
 
 	public function cerrar(){
 		session_destroy();
-		header('Location: /sena-proyecto');
+		$this->index();
 	}
 }
 
