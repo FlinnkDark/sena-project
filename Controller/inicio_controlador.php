@@ -21,11 +21,8 @@ class inicio_controlador{
 
 	public function cerrar(){
 		session_destroy();
-		$this->index();
+		header('Location: /sena-proyecto?controlador=inicio&accion=index');
 	}
 }
-
-
-
 
 ?>

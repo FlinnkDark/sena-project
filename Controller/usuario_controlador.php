@@ -20,15 +20,4 @@ class usuario_controlador{
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
-
 ?>
