@@ -1,17 +1,12 @@
-<div>
-  <div class="container">
-    <h1 class="title">Registro de actividades</h1>
-    <div class="card">
-      <form method="post" action="?controlador=actividades&accion=crear">
-        <label for="doc">Documendo de identidad</label>
-        <input id="doc" name="doc" type="number" required> 
-        <br/>
-        <label for="date">Fecha</label>
-        <input id="date" name="date" type="date">
-        <label for="act">Actividades Realizadas:</label>
-        <input type="text" id="act" name="act" required>
-        <input type="submit" value="Agregar actividad realizada">
-      </form>
-    </div>
-  </div>
+<div class="container"><br><br>
+    <center><h1 class="title">Registro de actividades</h1></center>
+    <form class="form" method="post" action="?controlador=actividades&accion=crear">
+      <label for="doc">Documento de identidad:</label>
+      <input id="doc" name="doc" type="number" required>
+      <label for="date">Fecha:</label>
+      <input id="date" name="date" type="date" required>
+      <label for="act">Actividades Realizadas:</label>
+      <input id="act" name="act" type="text" required> <br> <br>
+      <input type="submit" value="Agregar actividad realizada">
+    </form>
 </div>
